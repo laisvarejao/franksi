@@ -1,6 +1,6 @@
 # Franksi
 
-A simple Sinatra app generator.
+A basic Sinatra app generator.
 
 ## Installation
 
@@ -20,7 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Create a basic Sinatra project:
+
+    $ franksi new your-project 
 
 ## Contributing
 
