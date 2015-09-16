@@ -1,6 +1,6 @@
 # Franksi
 
-A basic Sinatra app generator.
+A command-line tool Sinatra app generator.
 
 ## Installation
 
