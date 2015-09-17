@@ -1,6 +1,6 @@
 # Franksi
 
-A command-line tool Sinatra app generator.
+A command-line tool Sinatra app generator. Yes, there are similar existing gems, but *I did it my way*. 
 
 ## Installation
 
