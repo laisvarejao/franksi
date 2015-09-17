@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Franksi::VERSION
   spec.authors       = ["Lais Varejão"]
   spec.email         = ["laisvarejao@gmail.com"]
-  spec.summary       = "A simple Sinatra app generator."
+  spec.summary       = "A command-line tool Sinatra app generator."
   spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/laisvarejao/franksi"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
