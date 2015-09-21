@@ -1,4 +1,4 @@
-require_relative "franksi/version"
+require File.join(File.dirname(__FILE__), 'franksi/version')
 require 'fileutils'
 
 module Franksi
@@ -17,6 +17,7 @@ module Franksi
     private 
   
       def new_directory
+        raise 'Directory exists' if File.exist?(@name)
         Dir.mkdir @name
       end
   
@@ -25,7 +26,7 @@ module Franksi
       end
 
       def template_directory
-        File.join(File.expand_path(File.dirname(__FILE__)),'/template/.')
+        File.join(File.expand_path(File.dirname(__FILE__)), '/template/.')
       end
   end
 
