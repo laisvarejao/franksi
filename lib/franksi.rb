@@ -10,18 +10,22 @@ module Franksi
     end
   
     def create
-      newDirectory
-      copyTemplate
+      new_directory
+      copy_template
     end
   
     private 
   
-      def newDirectory
+      def new_directory
         Dir.mkdir @name
       end
   
-      def copyTemplate
-        FileUtils.cp_r 'lib/template/.', @name #File.join(Rails.root, "doc/dummy.txt")
+      def copy_template
+        FileUtils.cp_r template_directory, @name 
+      end
+
+      def template_directory
+        File.join(File.expand_path(File.dirname(__FILE__)),'/template/.')
       end
   end
 
