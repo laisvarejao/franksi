@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Lais Varejão"]
   spec.email         = ["laisvarejao@gmail.com"]
   spec.summary       = "A command-line tool Sinatra app generator."
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.description   = ""
   spec.homepage      = "https://github.com/laisvarejao/franksi"
   spec.license       = "MIT"
 
