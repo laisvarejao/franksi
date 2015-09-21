@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+require_relative '../lib/franksi'
+
+#TODO: better command parsing
+name = ARGV.shift
+
+if name
+  Franksi::Project.new(name).create
+else
+  puts "-- Command 'franksi' requires a value"
+end
