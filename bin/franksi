@@ -1,14 +1,18 @@
 #!/usr/bin/env ruby
-require_relative '../lib/franksi'
+require 'franksi'
 
 case ARGV[0]
-when "new"
+when 'new'
   name = ARGV[1]
   if name
-    Franksi::Project.new(name).create
-    STDOUT.puts "-- Project #{name} created"
+    begin
+      Franksi::Project.new(name).create
+      STDOUT.puts "-- Project #{name} created"
+    rescue Errno::EEXIST => e
+      STDERR.puts e.message
+    end
   else
-    puts "-- Command 'new' requires a value"
+    STDERR.puts "-- Command 'new' requires a value"
   end
 else
   STDOUT.puts <<-EOF

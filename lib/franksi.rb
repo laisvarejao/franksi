@@ -17,7 +17,7 @@ module Franksi
     private 
   
       def new_directory
-        raise 'Directory exists' if File.exist?(@name)
+        raise Errno::EEXIST, 'Directory exists' if File.exist? @name
         Dir.mkdir @name
       end
   
