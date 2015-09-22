@@ -21,9 +21,9 @@ The default template has the following structure:
 ```
  ├── public/
  │   ├── css/
- │   │  └── style.css
+ │   │   └── style.css
  │   ├── images/
- │   │    └── favicon.ico
+ │   │   └── favicon.ico
  │   └── javascripts/
  │       └── script.js
  ├── views/
