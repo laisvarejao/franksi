@@ -28,7 +28,7 @@ The default template has the following structure:
  │       └── script.js
  ├── views/
  │   ├── index.html.erb
- │   └── layout.htm.erb
+ │   └── layout.html.erb
  ├── Gemfile
  ├── config.ru
  └── app.rb
