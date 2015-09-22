@@ -4,17 +4,7 @@ A command-line tool Sinatra app generator. Yes, there are similar existing gems,
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'franksi'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Install it as:
 
     $ gem install franksi
 
@@ -23,6 +13,26 @@ Or install it yourself as:
 Create a basic Sinatra project:
 
     $ franksi new your-project 
+
+## Template
+
+The default template has the following structure:
+
+```
+ ├── public/
+ │   ├── css/
+ │   │  └── style.css
+ │   ├── images/
+ │   │    └── favicon.ico
+ │   └── javascripts/
+ │       └── script.js
+ ├── views/
+ │   ├── index.html.erb
+ │   └── layout.htm.erb
+ ├── Gemfile
+ ├── config.ru
+ └── app.rb
+```
 
 ## Contributing
 
