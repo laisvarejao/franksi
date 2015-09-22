@@ -4,13 +4,13 @@ A command-line tool Sinatra app generator. Yes, there are similar existing gems,
 
 ## Installation
 
-Install it as:
+Install it yourself as:
 
     $ gem install franksi
 
 ## Usage
 
-Create a basic Sinatra project:
+Just run the executable to create a Sinatra project:
 
     $ franksi new your-project 
 
